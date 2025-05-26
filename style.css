@@ -61,7 +61,11 @@ body{
 .graphic_container{
     justify-content: center;
     align-items: center;
-    position: flex;
+    position: flex;display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
 
 .mode{
