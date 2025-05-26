@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunarpomo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <audio id="alarmSound" src="alarm.mp3"></audio> 
+  </head>
+
+  <body>
+    <div class="title">
+      <p>Lunardoro</p>
+      <img
+        src="moon.svg"
+        style="
+          width: 2rem;
+          height: auto;
+          margin: 10px;
+          filter: brightness(0) saturate(100%) invert(94%) sepia(27%)
+            saturate(450%) hue-rotate(1deg) brightness(92%) contrast(95%);
+        "
+      />
+    </div>
+    <div class="timer_settings">
+      <div class="timer_settings_button">
+        <p>focus</p>
+      </div>
+      <div class="timer_settings_button">
+        <p>short break</p>
+      </div>
+      <div class="timer_settings_button">
+        <p>long break</p>
+      </div>
+    </div>
+    <div class="graphic_container">
+      <div class="mode">
+        <p>focus</p>
+      </div>
+
+      <div class="graphic">
+        <svg class="progress-ring" width="400" height="400">
+          <!-- Background Ring (underneath) -->
+          <circle
+            class="ring-background"
+            cx="200"
+            cy="200"
+            r="180"
+            stroke="#302970"
+            stroke-width="15"
+            fill="none"
+          />
+
+          <!-- Foreground Ring (timer progress) -->
+          <circle
+            class="ring-progress"
+            cx="200"
+            cy="200"
+            r="180"
+            stroke="#e4e4a1"
+            stroke-width="15"
+            fill="none"
+            stroke-linecap="round"
+            transform="rotate(-90 200 200)"
+          />
+        </svg>
+
+        <div class="timer_time">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="pause_container">
+      <button id="pauseButton" class="pause">start</button>
+    </div>
+    <div class="bottom">
+        
+      <div class="settings">
+        <img
+          src="cog.svg"
+          style="
+            height: 4rem;
+            filter: brightness(0) saturate(100%) invert(94%) sepia(27%)
+            saturate(450%) hue-rotate(1deg) brightness(92%) contrast(95%);"
+          ;
+        />
+      </div>
+        <div class="settings-panel hidden" id="settingsPanel">
+            <h3>Set Timer Durations</h3>
+            <label>Focus (min): <input type="number" id="focusInput" min="1" value="30"></label><br>
+            <label>Short Break (min): <input type="number" id="shortBreakInput" min="1" value="15"></label><br>
+            <label>Long Break (min): <input type="number" id="longBreakInput" min="1" value="45"></label><br>
+            <h3>Sound</h3>
+            <label>
+            <input type="checkbox" id="muteToggle">
+            Mute sound
+            </label>
+            <button id="saveSettings">Save</button>
+        </div>
+    </div>
+  </body>
+</html>
