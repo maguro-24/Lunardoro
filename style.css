@@ -19,7 +19,7 @@ body{
 }
 
 .timer_settings {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,11 +61,7 @@ body{
 .graphic_container{
     justify-content: center;
     align-items: center;
-    position: flex;display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
+    position: flex;
 }
 
 .mode{
@@ -89,7 +85,6 @@ body{
   align-items: center;
   justify-content: center;
 }
-
 
 .progress-ring {
     position: absolute;
@@ -146,21 +141,22 @@ button.pause {
 }
 
 .settings {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    padding: 10px;
-    max-width: 60px;
-    max-height: 60px;
-    background-color: #231d5887;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    backdrop-filter: blur(5px);
-    z-index: 1000;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 0.6rem;
+  background-color: #231d5887;
+  color: #fef2d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  width: 48px;
+  height: 48px;
 }
 
 .settings:hover {
