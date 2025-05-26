@@ -205,6 +205,35 @@ button.pause {
     display: none;
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .timer_time {
+    font-size: 28px;
+  }
+
+  .mode {
+    font-size: 20px;
+  }
+
+  .pause {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .settings-panel {
+    font-size: 14px;
+  }
+
+  .timer_settings_button {
+    font-size: 16px;
+    width: min(40vw, 140px);
+    height: 50px;
+  }
+}
+
 
 
 
